@@ -12,7 +12,6 @@ import VolumeVsService from "./volume-vs-service"
 import Avatar from "../../../public/Avatar.png"
 import Notification from "../../../public/Notifications.svg"
 import US from "../../../public/United.svg"
-import { ScrollArea } from "../ui/scroll-area"
 
 // Update the main layout to be more responsive
 export default function Dashboard() {

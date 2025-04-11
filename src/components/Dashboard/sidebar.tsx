@@ -1,14 +1,7 @@
 "use client"
 
 import {
-    BarChart2,
-    LayoutDashboard,
-    LogOut,
     Menu,
-    MessageSquare,
-    Package,
-    Settings,
-    ShoppingCart,
     X,
 } from "lucide-react"
 import Image from "next/image"
