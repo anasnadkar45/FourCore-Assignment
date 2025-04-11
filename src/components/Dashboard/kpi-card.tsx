@@ -18,13 +18,13 @@ const KpiCard = ({
     iconColor
 }: KpiCardProps) => {
     return (
-        <div className={`rounded-lg p-4`} style={{ backgroundColor: bgColor }}>
-            <div className={`h-10 w-10 rounded-lg flex items-center justify-center mb-4`} style={{ backgroundColor: iconColor }}>
+        <div className={`rounded-lg p-4 flex flex-col gap-2`} style={{ backgroundColor: bgColor }}>
+            <div className={`h-10 w-10 rounded-full flex items-center justify-center mb-4`} style={{ backgroundColor: iconColor }}>
                 <Image src={icon} alt={lable} className='w-5 h-5' />
             </div>
-            <h3 className="text-2xl font-bold text-[#151d48] mb-1">{total}</h3>
-            <p className="text-sm text-[#151d48] mb-1">{lable}</p>
-            <p className="text-xs text-[#fa5a7d] flex items-center">
+            <h3 className="text-2xl font-bold mb-1">{total}</h3>
+            <p className="text-sm  mb-1">{lable}</p>
+            <p className="text-xs text-[#4079ED] flex items-center">
                 {description}
                 <svg
                     width="12"

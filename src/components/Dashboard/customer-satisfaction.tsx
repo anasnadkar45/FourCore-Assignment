@@ -1,9 +1,9 @@
 export default function CustomerSatisfaction() {
     return (
-      <div className="bg-white rounded-lg p-4 sm:p-6 h-full">
+      <div className="bg-card shadow-md rounded-lg p-4 sm:p-6 h-full">
         <h2 className="text-lg font-semibold text-[#151d48] mb-4 sm:mb-6">Customer Satisfaction</h2>
         <div className="h-[180px] sm:h-[200px] relative">
-          {/* This would be a real chart in production */}
+          
           <svg width="100%" height="100%" viewBox="0 0 350 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">

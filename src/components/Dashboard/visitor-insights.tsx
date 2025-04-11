@@ -1,9 +1,8 @@
 export default function VisitorInsights() {
     return (
-      <div className="bg-white rounded-lg p-4 sm:p-6 h-full">
-        <h2 className="text-lg font-semibold text-[#151d48] mb-4 sm:mb-6">Visitor Insights</h2>
+      <div className="bg-card shadow-md rounded-lg p-4 sm:p-6 h-full">
+        <h2 className="text-lg font-semibold mb-4 sm:mb-6">Visitor Insights</h2>
         <div className="h-[180px] sm:h-[200px] relative">
-          {/* This would be a real chart in production */}
           <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M0,150 C50,120 100,180 150,100 C200,20 250,80 300,60 C350,40 400,80 400,100"
@@ -41,15 +40,15 @@ export default function VisitorInsights() {
         </div>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 mt-4 sm:mt-6">
           <div className="flex items-center gap-2">
-            <div className="h-3 w-3 rounded-full bg-[#bf83ff]"></div>
+            <div className="h-3 w-3 rounded bg-[#bf83ff]"></div>
             <span className="text-xs text-[#737791]">Loyal Customers</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="h-3 w-3 rounded-full bg-[#ef4444]"></div>
+            <div className="h-3 w-3 rounded bg-[#ef4444]"></div>
             <span className="text-xs text-[#737791]">New Customers</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="h-3 w-3 rounded-full bg-[#3cd856]"></div>
+            <div className="h-3 w-3 rounded bg-[#3cd856]"></div>
             <span className="text-xs text-[#737791]">Unique Customers</span>
           </div>
         </div>

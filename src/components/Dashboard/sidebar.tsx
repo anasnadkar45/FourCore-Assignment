@@ -26,7 +26,7 @@ const NavLink = ({ lable, icon, isActive = false }: {
 }) => {
     return (
         <Link href="#" className={`flex items-center gap-3 px-6 py-3 rounded-md ${isActive ? "bg-[#5d5fef] text-white " : "bg-transparent text-secondary-foreground hover:bg-primary/20 "}`}>
-            <Image src={icon} alt={lable} className={`h-7 w-7 ${isActive ? "text-foreground" : "bg-secondary-foreground rounded-md"}`} />
+            <Image src={icon} alt={lable} className={`h-7 w-7 ${isActive ? "text-foreground" : "rounded-md"}`} />
             <span className="font-medium">{lable}</span>
         </Link>
     )
@@ -78,7 +78,7 @@ export default function SideBar() {
                         />
                     ))}
                 </nav>
-                <div className="p-6 mb-10">
+                <div className="p-6 mb-25">
                     <div className="bg-primary relative rounded-lg p-6 text-white">
                         <div className="absolute -top-24 -right-1/3 w-[200px] h-[200px] rounded-full bg-linear-to-tr from-[#FFFFFF66] to-40% to-[#FFFFFF00]"></div>
                         <div className="flex justify-center mb-4">

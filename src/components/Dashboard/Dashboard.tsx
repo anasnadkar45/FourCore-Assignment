@@ -12,22 +12,23 @@ import VolumeVsService from "./volume-vs-service"
 import Avatar from "../../../public/Avatar.png"
 import Notification from "../../../public/Notifications.svg"
 import US from "../../../public/United.svg"
+import { ScrollArea } from "../ui/scroll-area"
 
 // Update the main layout to be more responsive
 export default function Dashboard() {
   return (
-    <div className="flex flex-col md:flex-row h-screen bg-[#f9fafb]">
+    <div className="flex flex-col md:flex-row max-h-screen bg-[#f9fafb] overflow-hidden">
       <SideBar />
-      <div className="flex-1 overflow-auto">
-        <header className="flex sm:flex-row sm:items-center justify-between gap-4 px-4 sm:px-8 py-4 bg-white">
+      <div className="w-full flex-1 overflow-auto relative ">
+        <header className="fixed z-10 top-0 right-0 left-0 md:left-[280px] flex sm:flex-row sm:items-center justify-between gap-4 px-4 sm:px-8 py-4 bg-white">
           <h1 className="text-2xl font-bold text-[#151d48]">Dashboard</h1>
           <div className="flex flex-wrap items-center gap-4 sm:gap-6">
             <div className="relative xl:flex hidden">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-[#737791]" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-6 w-6 text-primary" />
               <input
                 type="text"
                 placeholder="Search here..."
-                className="pl-10 pr-4 py-2 rounded-md bg-background w-full lg:w-[260px] xl:w-[300px] text-sm focus:outline-none"
+                className="pl-10 pr-4 py-3 rounded-md bg-background w-full lg:w-[260px] xl:w-[300px] text-sm focus:outline-none"
               />
             </div>
             <div className="lg:flex hidden items-center gap-2 cursor-pointer">
@@ -66,7 +67,7 @@ export default function Dashboard() {
             </div>
           </div>
         </header>
-        <main className="p-4 sm:p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6">
+        <main className="mt-20 p-4 sm:p-6 md:p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6">
           <div className="md:col-span-2 lg:col-span-8">
             <TodaySales />
           </div>
