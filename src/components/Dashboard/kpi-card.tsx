@@ -18,7 +18,7 @@ const KpiCard = ({
     iconColor
 }: KpiCardProps) => {
     return (
-        <div className={`rounded-lg p-4 flex flex-col gap-2`} style={{ backgroundColor: bgColor }}>
+        <div className={`rounded-lg p-3 flex flex-col gap-2`} style={{ backgroundColor: bgColor }}>
             <div className={`h-10 w-10 rounded-full flex items-center justify-center mb-4`} style={{ backgroundColor: iconColor }}>
                 <Image src={icon} alt={lable} className='w-5 h-5' />
             </div>
